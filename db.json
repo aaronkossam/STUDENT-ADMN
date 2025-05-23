@@ -1,0 +1,22 @@
+{
+  "StudentLIST": [
+    {
+      "id": "1",
+      "name": "aaron",
+      "place": "Accra",
+      "phone": "245845324"
+    },
+    {
+      "id": "2",
+      "name": "edna",
+      "place": "scc",
+      "phone": "44h4"
+    },
+    {
+      "id": "3",
+      "name": "tawiah",
+      "place": "spintex",
+      "phone": "22233333"
+    }
+  ]
+}
