@@ -23,8 +23,9 @@ const Createpage = () => {
   const [studentinfo, setStudentinfo] = useState({
     id: "",
     name: "",
-    place: "",
+    room: "",
     phone: "",
+    programme: "",
   });
 
   const [validate, setValidate] = useState(false);
@@ -80,14 +81,14 @@ const Createpage = () => {
           <p className=" text-sm text-red-700">please fill this field</p>
         )}
         <label
-          htmlFor="place"
+          htmlFor="room"
           className="input input-bordered flex items-center gap-2 mt-2"
         >
-          Place:
+          Room:
           <input
-            name="place"
-            value={studentinfo.place}
-            id="place"
+            name="room"
+            value={studentinfo.room}
+            id="room"
             onChange={handleChange}
             type="text"
             required
@@ -106,6 +107,25 @@ const Createpage = () => {
             id="phone"
             name="phone"
             value={studentinfo.phone}
+            onChange={handleChange}
+            type="text"
+            required
+            className="grow"
+          />
+        </label>
+        {studentinfo.length === 0 && validate && (
+          <p className=" text-sm text-red-700">please fill this field</p>
+        )}
+
+        <label
+          htmlFor="programme"
+          className="input input-bordered flex items-center gap-2 mt-2"
+        >
+          Programme:
+          <input
+            name="programme"
+            value={studentinfo.programme}
+            id="programme"
             onChange={handleChange}
             type="text"
             required
