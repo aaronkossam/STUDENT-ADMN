@@ -1,11 +1,11 @@
 {
   "StudentLIST": [
- {
-      "id":"1",
-      "name":"aaron",
-      "room":"1045",
-      "phone":"programme",
-      "programme":"BA econs"
+    {
+      "id": "1",
+      "name": "aaron",
+      "room": "1045",
+      "phone": "programme",
+      "programme": "BA econs"
     }
   ]
 }
