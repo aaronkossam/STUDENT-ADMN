@@ -2,13 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
 const Studentdashboard = () => {
-  const { studentid } = useParams();
   const [studentdata, setStudentdata] = useState([]);
   useEffect(() => {
     fetch("http://localhost:8000/StudentLIST")
       .then((res) => res.json())
       .then((data) => setStudentdata(data))
-      .catch((err) => alert("error fetching data" + err.messsage));
+      .catch((err) => console.log("error fetching data" + err.messsage));
   }, []);
   const Navigate = useNavigate();
 
